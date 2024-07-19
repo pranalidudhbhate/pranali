@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+            line-height: 1.5;
+            color: #432818;
+            background-color: #f0ead2;
+            padding: 20px; /* Adding padding for better readability */
+        }
+
+        /* Flex container for image and text */
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px; /* Space between sections */
+        }
+
+        /* Image styling */
+        .flex-container img {
+            max-width: 20%;
+            height: auto;
+            flex: 1 1 10%; /* Image takes up 40% of the container width */
+            border-radius: 10px; /* Rounded corners for the image */
+        }
+
+        /* Main content styles */
+        .maininfo {
+            flex: 1 1 50%; /* Text takes up 50% of the container width */
+            padding: 20px; /* Adjust based on your design */
+        }
+
+        .maininfo h1 {
+            font-size: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #head{
+            font-size: 40px;
+        }
+        .maininfo h4 {
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .maininfo1 h1, .maininfo1 p {
+            text-align: center; /* Center align for better readability */
+        }
+
+        .maininfo1 p {
+            margin-top: 10px;
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column-reverse; /* Stack image and text vertically on smaller screens */
+            }
+
+            .maininfo, .maininfo1 {
+                text-align: center; /* Center align for smaller screens */
+                padding: 10px; /* Adjust padding for smaller screens */
+            }
+
+            .maininfo h1 {
+                font-size: 32px; /* Adjust font size for smaller screens */
+            }
+
+            .maininfo h4 {
+                font-size: 18px; /* Adjust font size for smaller screens */
+            }
+
+            .maininfo1 p {
+                font-size: 14px; /* Adjust font size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="page2" class="page page2">
+            <div class="information">
+                <div class="maininfo1">
+                    <h1 id="head">Best Online Child Psychology Services</h1>
+                    <p>
+                        Happy Hearts is the best online child therapy and counselling website worldwide.
+                        We understand that children sometimes need additional mental health support to help them navigate the challenges of growing up. Our team of qualified and experienced child psychologists is here to provide that support in a safe and caring environment.
+                        Childhood is an important aspect in every individual’s life. Often, the root of many difficulties one faces in their adult life, lies within their childhood. Therefore, intervening and working through concerns at a young age can help towards creating a more free and peaceful future.
+                        Child counseling, as the name suggests, focuses on improving the mental well-being of the child who may be going through adjustment difficulties, having anxiety and depression symptoms, or troubles in school or home.
+                        Therapy for Children can help them understand their challenges and create a safe space where they can share their emotions and concerns. This helps them to feel more happy and can support their well-being.
+                    </p>
+                </div>
+                <div class="flex-container">
+                    <div class="maininfo">
+                        <h1>Children's Counselling</h1>
+                        <h4>We offer counselling for children of all ages to help them express themselves
+                            and work through any issues they may be facing. Our child counsellors are 
+                            specially trained to communicate with children in a way that is comfortable 
+                            and engaging for them</h4>
+                    </div>
+                    <img src="child counselling.webp" alt="Image 1">
+                </div>
+                
+                <div class="flex-container">
+                    <img src="parenting counsellinng.webp" alt="Image 2">
+                    <div class="maininfo">
+                        <h1>Parenting Counselling</h1>
+                        <h4>We believe that parenting can be challenging, and sometimes parents need support too.
+                            Our parenting counsellors are here to provide guidance and support to parents who are 
+                            navigating the ups and downs of raising children.</h4>
+                    </div>
+                </div>
+                
+                <div class="flex-container">
+                    <div class="maininfo">
+                        <h1>Child Psychologist Assessment</h1>
+                        <h4>Our child psychologists are experienced in assessing a wide range of psychological 
+                            and developmental issues in children. We use a variety of assessment tools to help 
+                            identify any underlying issues and develop a treatment plan that is tailored to the 
+                            child's individual needs.</h4>
+                    </div>
+                    <img src="child psychologist.webp" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
